@@ -7,6 +7,11 @@ body {
   align-items: start;
 }
 
+i {
+  font-size: 50px;
+
+}
+
 div {
   border-radius: 3px;
 }
@@ -51,6 +56,8 @@ div {
   margin: 10px 5px;
   position: relative;
   background: #dfe1e6;
+  text-align: center;
+  padding-top: 15px;
 }
 
 
@@ -85,4 +92,26 @@ div {
 .del {
   font-weight: 600;
   color: gray;
+}
+
+.or-spacer-vertical {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 5px;
+  position: relative;
+}
+.or-spacer-vertical .mask {
+  overflow: hidden;
+  width: 10px;
+  height: 750px;
+}
+.or-spacer-vertical.left .mask:after {
+  content: '';
+  display: block;
+  margin-left: -20px;
+  width: 20px;
+  height: 100%;
+  border-radius: 12px / 125px;
+  box-shadow: 0 0 8px black;
 }
